@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌊Praias do Brasil</title>
+    <!--Link para conexão do arquivo externo do css-->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <!--Criando uma lista para o menu do site-->
+    <ul id="barraNavegacao">
+        <li class="menu"><a href="#copacabana">Copacabana</a></li>
+        <li class="menu"><a href="#jeri">Jericoacora</a></li>
+        <li class="menu"><a href="#portoDeGalinhas">Porto de Galinhas</a></li>
+        <li class="menu"><a href="#espelho">Praia do Espelho</a></li>
+        <li class="menu"><a href="#praiaforte">Praia do Forte</a></li>
+        <li class="menu"><a href="#cuidadosVerao">Cuidados no Verão</a></li>
+        <li class="menu"><a href="#dicas">Dicas</a></li>
+        <li class="menu"><a href="#visiteTambem">Visite Também</a></li>
+    </ul>
+    <!--Criando a estrutura do menu check - menu que aparecerá quando a tela estiver pequena-->
+    <!--Cria um checkbox que ficará invisivel e servirá de gatilho para abrir/fechar o menu-->
+    <input type="checkbox" id="menu-check">
+    <!--Cria um rótulo clicável que aciona o check box acima, ele sabe que precisa acionar o check box acima devido ao parâmetro menu-check passado no atributo for, que corresponde ao mesmo id do input type checkbox-->
+    <label for="menu-check" class="menuicone">&#9776;Menu</label>
+    <!--Estrutura mais recente que permite agrupar elementos de navegação da pág-->
+    <nav class="mobile-menu">
+        <a href="#copacabana">Copacabana</a>
+        <a href="#portoDeGalinhas">Porto de Galinhas</a>
+        <a href="#espelho">Praia do Espelho</a>
+        <a href="#praiaforte">Praia do Forte</a>
+        <a href="#cuidadosVerao">Cuidados no Verão</a>
+        <a href="#dicas">Dicas</a>
+        <a href="#visiteTambem">Visite Também</a>
+    </nav>
+    
+    <h1>Praias do Brasil</h1>
+    <!--Estrutura de organização das informações dentro de uma pág. web-->
+    <section id="copacabana">
+        <h3>Copacabana - RJ</h3>
+        <!--Adiciona uma imagem, possui o atributo src onde se referencia a imagem (onde está) e o alt auxilia na acessibilidade além de exibir o txt na tela quando a imagem falhar-->
+        <!-- Inicio do desenvolvimento na Aula 05/07 -->
+        <!--A ideia é realizar esse desenvolvimento para que cada section tenha duas ou mais imagens para um melhor preenchimento de tela-->
+        <div class="imgpraias">
+            <img src="img/copacabana.jpg"
+                alt="Imagem da praia de copacabana no icônico calçadão em um dia de sol e muito calor">
+            <img src="img/copacabana.jpg"
+            alt="Imagem da praia de copacabana no icônico calçadão em um dia de sol e muito calor">
+        </div>
+        <!-- Fim do desenvolvimento na Aula 05/07 -->
+
+        <h2>Restaurantes recomendados</h2>
+        <!--Criando uma lista não-ordenada-->
+        <ul><!--Estrutura de lista não-ordenada-->
+            <!--1º item da lista-->
+            <li>Nossa primeira recomendação é o restaurante
+                <a href="https://marius.com.br/">Marius</a>, conhecido por sua cozinha Brasileira e Mediterrânea.
+            </li>
+            <!--2º item da lista-->
+            <li>Nossa segunda recomendação vai para Cantina <a href="http://latrattoriario.com.br/">La Trattoria</a>,
+                conhecido por sua tradicional comida italiana.</li>
+            <!--3° item da lista-->
+            <li>Por fim nosso última recomendação é o restaurante <a
+                    href="https://windsorhoteis.com/hotel/miramar-by-windsor-copacabana/gastronomia/">Alloro Al
+                    Miramar</a> outro tradicional restaurante de comida italiana muito elogiado pelos clientes.</li>
+        </ul><!--fim da lista não ordenada-->
+        <h2>O que fazer em Copacabana</h2>
+        <ol><!--Inicio da lista ordenada-->
+            <li>O clássico: você pode tomar sol, pegar um bronze, nadar ou simplismente relaxar na areia com uma água de
+                coco.</li>
+            <li>Forte de copacabana:Uma mistura de história, vista linda e café da manhã gostoso (o café do Forte é
+                famoso). Dá pra ver toda a orla da praia de lá. </li>
+            <li>Feirinha de copacabana: Acontece principalmente à noite, tem artesanato, lembrancinhas e várias
+                coisinhas cariocas.</li>
+        </ol>
+    </section>
+    <section id="jeri">
+        <h3>Jericoacora - CE</h3>
+        <!-- Inicio do desenvolvimento na Aula 05/07 -->
+        <div class="imgpraias">
+            <img src="/img/jericoacoara.jpg" alt="">
+            <img src="/img/jericoacoara.jpg" alt="">
+        </div>
+        <!-- Fim do desenvolvimento na Aula 05/07 -->
+        <h2>Restaurantes Recomendados</h2>
+        <ul>
+            <li>Nossa primeira recomendação é o restaurante <a
+                    href="https://www.instagram.com/restaurantetamarindo/">Tamarindo</a> com sua culinária Brasileira,
+                com foco em frutos do mar e pratos regionais.</li>
+            <li>Se você aprecia a culinária Nordestina nossa segunda recomendação é perfeita para você, restaurante <a
+                    href="https://www.instagram.com/nacasadeladobeco/">Casa Dela</a>, lá você encontrará comida caseira
+                e artesal, em um ambiente rústico e acolhedor.</li>
+            <li>Pratos contemporâneos com ênase em frutos do mar, <a
+                    href="https://www.instagram.com/ellorestaurante/">Éllo Restaurante</a> ofere pratos sofisticados
+                como entrada de caju, tartar de peixe e mousse de chocolate quente com sorvete de caramelo.</li>
+
+        </ul>
+        <h2>O que fazer em Jericoacora</h2>
+        <ol>
+            <li>Para os amantes de esportes, Jeri é um destino renomado para esportes aquáticos, devido aos ventos
+                constantes há muitos praticantes de Kitesurf e Windsurf, com escolas que oferecem aulas para iniciantes
+                e aluguel de equipamentos. </li>
+            <li>Lagoa Azul Próxima à Lagoa do Paraíso, oferece águas transparentes e tranquilas, com opções de lazer
+                como trampolins e pequenas embarcações.</li>
+            <li>Mangue Seco e Rio Guriú: Atravessando o rio de balsa, você encontrará raízes de mangue retorcidas e
+                poderá observar cavalos-marinhos em seu habitat natural.</li>
+        </ol>
+    </section>
+    <section id="portoDeGalinhas" >
+        <h3>Porto de Galinhas - PE</h3>
+        <img src="/img/portoDeGalinhas.jpg" alt="">
+        <h2>Restaurantes Recomendados</h2>
+        <ul>
+            <li>Conhecido por sua culinária sofisticada <a
+                    href="https://www.beijupira.com.br/restaurante/beijupir%C3%A1-porto-de-galinhas">Beijupirá
+                    Restaurante</a> traz toda a brasilidade da culinária regional.</li>
+            <li>Especializado em pratos à base de mandioca, <a href="https://www.instagram.com/barcaxeira/">Barcaxeira
+                </a>é a nossa segunda recomendação para quem gosta da culinária Brasileira</li>
+            <li>Nossa terceira recomendação é o restaurante <a
+                    href="https://www.instagram.com/peixenatelha/?hl=es">Peixe na Telha</a> que serve frutos do mar e
+                outras especialidades nordestinas em travessas de terracota em formato de telha. A opção de se sentar na
+                praia permite que os clientes relaxem com os pés na areia enquanto apreciam a culinária local.</li>
+
+        </ul>
+        <h2>O que fazer em Porto de Galinhas</h2>
+        <ol>
+            <li>Conhecidas por suas águas cristalinas e vida marinha abundante, as piscinas naturais são a principal
+                atração da região. Dependendo da maré, é possível acessá-las a pé ou por meio de passeios de jangada.
+            </li>
+            <li>Explorar as praias e dunas de buggy é uma maneira emocionante de conhecer a região. </li>
+            <li>Porto de Galinhas oferece diversas praias paradisíacas, como a Praia de Muro Alto, ideal para famílias
+                devido às suas águas calmas, e a Praia de Maracaípe, conhecida por suas ondas fortes, atraindo surfistas
+                de todo o mundo.</li>
+        </ol>
+    </section>
+    <section id="espelho">
+        <h3>Praia do Espelho - BA</h3>
+        <img src="/img/praiaespelho.jpg" alt="">
+        <h2>Restaurantes Recomendados</h2>
+        <ul>
+            <li>Localizado em um ambiente acolhedor entre o mangue e a praia,nossa primeira recomendação é o <a
+                    href="https://www.instagram.com/restaurantesilvinha/">Restaurante da Silvinha</a> este restaurante é
+                conhecido por sua comida caseira preparada no fogão a lenha.</li>
+            <li>A segunda recomendação <a href="https://www.instagram.com/recantodoespelho/">Recanto do Espelho</a>
+                localizado dentro de uma pousada, oferece um ambiente com redes e mesas à beira-mar</li>
+            <li>O <a href="https://www.instagram.com/beiramarespelho/">Espelho Restaurante-Bar</a> possui uma vista
+                incrível para praia, e conta um cardápio que agrada muitos brasileiros: Petiscos, saladas, grelhados e
+                moquecas.</li>
+        </ul>
+        <h2>O que fazer em Praia do Espelho </h2>
+        <ol>
+            <li>Banho de mar e relaxamento: A praia é ideal para banhistas, com águas calmas e mornas.</li>
+            <li>Caminhadas pelas falésias: Explorar as falésias que cercam a praia proporciona vistas panorâmicas e
+                oportunidades para fotos incríveis.</li>
+            <li>Visita à Praia dos Amores: Acessível por uma breve caminhada, esta praia é conhecida por sua
+                tranquilidade e beleza natural. </li>
+        </ol>
+    </section>
+    <section id="praiaforte">
+        <h3>Praia do Forte - BA</h3>
+        <img src="/img/praiaforte.jpg" alt="">
+        <h2>Restaurantes Recomendados</h2>
+        <ul>
+            <li>Nossa primeira recomendação é o tradicional <a href=""></a></li>
+            <li>Para a segunda opção temos o famoso <a href=""></a></li>
+            <li>Em nossa terceira opção, mas não menos recomendável, temos <a href=""></a></li>
+
+        </ul>
+        <h2>O que fazer em Praia do Forte </h2>
+        <ol>
+            <li>Castelo Garcia D'Ávila:Ruínas de um antigo castelo construído no século XVI, que oferece uma vista
+                incrível do litoral baiano. É um lugar perfeito para quem gosta de história e quer ver uma vista
+                espetacular.</li>
+            <li>Caminhada pelas Trilhas do Parque Natural de Sapiranga, uma área de preservação ambiental com trilhas em
+                meio à vegetação nativa da Bahia.</li>
+            <li>Projeto Tamar: o centro de preservação de tartarugas marinhas, um dos principais atrativos da Praia do
+                Forte. Você poderá aprender sobre as espécies de tartarugas e as ações para sua preservação.</li>
+        </ol>
+    </section>
+    <section id="cuidadosVerao">
+        <img src="img\verao.png" alt="Cuidados no Verão" width="300" height="300">
+        <h2>Cuidados no Verão</h2>
+        <p>Para aproveitar o verão nas praias, é importante tomar alguns cuidados, como usar protetor solar, manter-se
+            hidratado...</p>
+        <ul>
+            <li>Fique longe do limão</li>
+            <li>Abuse do protetor solar (e de roupas com fotoproteção)</li>
+            <li>Tenha cuidado com a alimentação</li>
+            <li>Evite nadar logo após comer</li>
+            <li>Não fique muito tempo com roupa de banho molhada</li>
+            <li>Não esqueça de proteger os olhos</li>
+            <li>Cuidado com a bebida alcoólica em excesso</li>
+            <li>Não esqueça de beber água</li>
+        </ul>
+    </section>
+    <section id="dicas">
+        <h2>Dicas para não perder crianças na praia</h2>
+        <p>Em praias movimentadas, é essencial ficar atento às crianças. Algumas dicas incluem estabelecer um ponto de
+            encontro, identificar as crianças com pulseiras...</p>
+        <img src="img\crianca.jpg" alt="Crianca na praia com os pais" width="300" height="300">
+        <h2>Outras dicas</h2>
+        <ol>
+            <li> Mantenha um ponto de encontro definido.</li>
+            <li> Use pulseiras de identificação nas crianças.</li>
+            <li> Ensine às crianças seus nomes completos e números de telefone.</li>
+            <li> Esteja atento à localização das salva-vidas.</li>
+            <li> Evite praias muito movimentadas.</li>
+            <li> Incentive as crianças a não se afastarem muito.</li>
+            <li> Use uma barraca ou guarda-sol colorido como ponto de referência.</li>
+            <li> Esteja ciente dos arredores e identifique pontos de referência fixos.</li>
+        </ol>
+    </section>
+    <section id="visiteTambem">
+        <h2>Visite também</h2>
+        <!--A div também é uma estrutura organizadora de elementos-->
+        <div id="cards">
+            <!--Construindo cards-->
+            <!--Card nº1-->
+            <div class="card" style="width: 18rem;">
+                <img src="img/tamar.webp" alt="" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Ubatuba - Projeto Tamar</h5>
+                    <p class="card-text">O Projeto Tamar foi criado em 1980 e hoje é reconhecido internacionalmente como uma das mais bem-sucedidas experiências de conservação marinha.</p>
+                    <a href="https://www.tamar.org.br/" class="btn">Visitar</a>
+                </div>
+            </div>
+             <!--Card nº2-->
+            <div class="card" style="width: 18rem;">
+                <img src="img/tamar.webp" alt="" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Ubatuba - Projeto Tamar</h5>
+                    <p class="card-text">O Projeto Tamar foi criado em 1980 e hoje é reconhecido internacionalmente como uma das mais bem-sucedidas experiências de conservação marinha.</p>
+                    <a href="https://www.tamar.org.br/" class="btn">Visitar</a>
+                </div>
+            </div>
+             <!--Card nº3-->
+            <div class="card" style="width: 18rem;">
+                <img src="img/tamar.webp" alt="" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Ubatuba - Projeto Tamar</h5>
+                    <p class="card-text">O Projeto Tamar foi criado em 1980 e hoje é reconhecido internacionalmente como uma das mais bem-sucedidas experiências de conservação marinha.</p>
+                    <a href="https://www.tamar.org.br/" class="btn">Visitar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Início do desenvolvimento na Aula 05/07 -->
+    <!--Criando o rodapé da página-->
+    <footer>
+        <p>Produzido por Jackeline Ribeiro</p>
+        <p>Curso Desenvolvimento JavaScript 2025</p>
+    </footer>
+    <!-- Fim do desenvolvimento na Aula 05/07 -->
+</body>
+</html>
